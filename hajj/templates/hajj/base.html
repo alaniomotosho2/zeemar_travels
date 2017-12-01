@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,10 +9,10 @@
 <meta name="description" content="We are one of the leading tour operators for Haj and Umrah tours in Mumbai. We also offer tour packages to leading destinations around the world. "/>
 <meta name="keywords" content="Haj tour, Umrah tour, Ziyarat tour, Umrah tour operator, Umrah tour operators Mumbai"/>
 <meta name="msvalidate.01" content="DE2EC3871305B0F78E76DA5170B07419" />
-<link href="css/bootstrap.css" rel="stylesheet" media="screen" />
-<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen" />
-<link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen" />
-<link href="css/font-awesome.css" rel="stylesheet" media="screen" />
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/bootstrap-responsive.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/font-awesome.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/font-awesome.css" %}" rel="stylesheet" media="screen" />
 
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> <!-- prettyPhoto -->
 
@@ -21,10 +22,10 @@
 <!--[if IE 7]>
 				<link rel="stylesheet" href="css/main-ie7.css">
 			<![endif]-->
-<link href="css/main.css" rel="stylesheet" media="screen" />
-<link href="css/media.css" rel="stylesheet" media="screen" />
-<link href="css/menu.css" rel="stylesheet" media="screen" />
-<link rel="stylesheet" media="screen" href="css/sequence-slider.css" />
+<link href="{% static "css/main.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/media.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/menu.css" %}" rel="stylesheet" media="screen" />
+<link rel="stylesheet" media="screen" href="{% static "css/sequence-slider.css" %}" />
  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,500,600,300italic' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400,300,500,600,700,300italic' rel='stylesheet' type='text/css' />	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
