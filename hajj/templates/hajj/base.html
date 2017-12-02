@@ -14,7 +14,7 @@
 <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" media="screen" />
 <link href="{% static "css/font-awesome.css" %}" rel="stylesheet" media="screen" />
 
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> <!-- prettyPhoto -->
+<link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> <!-- prettyPhoto -->
 
 	<!--[if IE 7]>
 				<link rel="stylesheet" href="css/font-awesome-ie7.css">
@@ -53,8 +53,8 @@ return false;
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 
 
-<script src="src/skdslider.js"></script>
-<link href="src/skdslider.css" rel="stylesheet">
+<script src="{% static "js/skdslider.js" %} "></script>
+<link href="{% static "css/skdslider.css" %}" rel="stylesheet">
 <script type="text/javascript">
 		jQuery(document).ready(function(){
 			jQuery('#main-slier').skdslider({'delay':4000, 'fadeSpeed': 2000,'showNextPrev':true,'showPlayButton':false,'autoStart':true});
@@ -72,7 +72,7 @@ $(".pagekage-hover").click(function(){
 });
 </script>
 
-  <script type="text/javascript" src="js/sld/jquery.gmap.min.js"></script>
+  <script type="text/javascript" src="{% static "js/jquery.gmap.min.js" %}"></script>
   <script type="text/javascript">
 $(document).ready(function() {
     $('.slideshow').cycle({
@@ -305,7 +305,7 @@ s0.parentNode.insertBefore(s1,s0);
 				<div class="row-fluid">
 					<!-- Logo Start -->
 						<div class="span3 logo">
-							<a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+							<a href="index.html"><img src="{ static "img/logo.jpg" %}" alt="" /></a>
                             <a href="https://plus.google.com/103692544463633985359" rel="publisher"></a>
 						</div>
 					<!-- Logo End -->
@@ -607,15 +607,15 @@ s0.parentNode.insertBefore(s1,s0);
                          </div> </div>-->
 
  <ul>
- <li><a href="http://atlastravels.com/ziyarat.html" target="_blank"><img src="http://atlastravels.com/slides/gyarvee-shareef.jpg" alt="Hajj 2015" class="atlas-slide1" /></a></li>
-  <li><a href="http://atlasumrah.com/" target="_blank"><img src="slides/umrah-2017.jpg" alt="Hajj 2015" class="atlas-slide1" /></a></li>
- <li><a href="dubai.html"><img src="slides/3.jpg" alt="dubai tour" class="atlas-slide2" /></a></li>
+ <li><a href="http://atlastravels.com/ziyarat.html" target="_blank"><img src="{% static "img/gyarvee-shareef.jpg" %}" alt="Hajj 2015" class="atlas-slide1" /></a></li>
+  <li><a href="http://atlasumrah.com/" target="_blank"><img src="{% static "img/umrah-2017.jpg" %}" alt="Hajj 2015" class="atlas-slide1" /></a></li>
+ <li><a href="dubai.html"><img src="{% static "img/3.jpg" %}" alt="dubai tour" class="atlas-slide2" /></a></li>
 
-<li><a href="http://atlasumrah.com/"><img src="slides/2.jpg" alt="Umrah 2014 - 2015" class="atlas-slide1" /></a></li>
-<li><a href="http://atlasumrah.com/"><img src="slides/1.jpg" alt="Umrah 2014 - 2015" class="atlas-slide1" /></a></li>
+<li><a href="http://atlasumrah.com/"><img src="{% static "img/2.jpg" %}" alt="Umrah 2014 - 2015" class="atlas-slide1" /></a></li>
+<li><a href="http://atlasumrah.com/"><img src="{% static "img/1.jpg" %}" alt="Umrah 2014 - 2015" class="atlas-slide1" /></a></li>
 
-<li><a href="dubai.html"><img src="slides/4.jpg" alt="dubai tour" class="atlas-slide2" /></a></li>
-<li><a href="dubai.html"><img src="slides/5.jpg" alt="dubai tour" class="atlas-slide2" /></a></li>
+<li><a href="dubai.html"><img src="{% static "img/4.jpg" %}" alt="dubai tour" class="atlas-slide2" /></a></li>
+<li><a href="dubai.html"><img src="{% static "img/5.jpg" %}" alt="dubai tour" class="atlas-slide2" /></a></li>
 <!--<li><a href="malaysia-singapore.html"><img src="slides/malasiya.jpg" alt="Malaysia- Singapore Tour" class="atlas-slide3" /></a></li>-->
 
 
@@ -728,7 +728,7 @@ document.write(PastYear +"-"+ year);
 							</li>-->
 
                          <li class="span4 corporate_umrah">
-							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="img/portfolio/umrah_tour.jpg"  /></a>
+							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="{% static "img/umrah_tour.jpg" %}"  /></a>
 
                               <h3 class="text-center"><a title="Umrah Tour Packages" href="http://atlasumrah.com/">Umrah  <script type="text/javascript">
 var currentTime = new Date()
@@ -763,7 +763,7 @@ document.write(PastYear +"-"+ year);
 							</li>
 
                          <li class="span4 corporate_umrah">
-							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="img/portfolio/corporate_umrah.jpg"  /></a>
+							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="{% static "img/corporate_umrah.jpg" %}"  /></a>
 
                               <h3 class="text-center"><a title="Umrah Tour Packages" href="http://atlasumrah.com/">Corporate Umrah</a></h3>
 
@@ -787,7 +787,7 @@ is for those who want the best and appreciate good things in Life" After a thoro
 
 							</li>
                         <li class="span4 corporate_umrah">
-							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="img/portfolio/ramadan_in_umrah.jpg"  /></a>
+							  <a title="Haj Tour" href="http://atlasumrah.com/" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="{% static "img/ramadan_in_umrah.jpg" %}"  /></a>
 
                               <h3 class="text-center"><a title="Umrah Tour Packages" href="http://atlasumrah.com/">Ramadan Umrah</a></h3>
 
@@ -832,7 +832,7 @@ Atlas Tours has been very successful in catering to thousands of passengers, hav
 
 
                        	<li class="span6">
-							  <a title="Haj Tour" href="haj.html" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="img/portfolio/Haj-tour.png"  /></a>
+							  <a title="Haj Tour" href="haj.html" class="thumbnail pilgrim-thumb"><img alt="Haj Tour" title="Haj Tour" style="border:inset 5px solid #eee;" src="{% static "img/Haj-tour.png" %}"  /></a>
 
                               <h3 class="text-left"><a title="Umrah Tour Packages" href="hajj.html">Hajj <small>Spirituality at its best</small></a></h3>
 
@@ -970,7 +970,7 @@ Atlas Tours has been very successful in catering to thousands of passengers, hav
 						<ul class="thumbnails latest_pro da-thumbs holiday_tours">
 
 							<li class="span4">
-							  <a href="#" class="thumbnail"><img src="img/portfolio/project1.png" alt="" /></a>
+							  <a href="#" class="thumbnail"><img src="{% static "img/project1.png" %}" alt="" /></a>
 							  <h3 class="text-center"><a href="domestic-packages.html">Domestic Package</a></h3>
                               <p class="text-center sans14"><a href="domestic-packages.html">Explore your home country</a></p>
 							 								<article class="da-slideFromBottom da-animate da-slideTop">
@@ -986,7 +986,7 @@ Atlas Tours has been very successful in catering to thousands of passengers, hav
 							</li>
 
 							<li class="span4">
-							  <a href="international-packages.html" class="thumbnail"><img src="img/portfolio/project2.png" alt="" /></a>
+							  <a href="international-packages.html" class="thumbnail"><img src="{% static "img/project2.png" %}" alt="" /></a>
 							  <h3 class="text-center"><a href="international-packages.html">International Package</a></h3>
                               <p class="text-center sans14"><a href="international-packages.html">Your heart is made to travel the world</a>
 </p>
@@ -1005,7 +1005,7 @@ Atlas Tours has been very successful in catering to thousands of passengers, hav
 							</li>
 
 							<li class="span4">
-							  <a href="dubai.html" class="thumbnail"><img src="img/portfolio/project3.png" alt="" /></a>
+							  <a href="dubai.html" class="thumbnail"><img src="{% static "img/project3.png" %}" alt="" /></a>
 							  <h3 class="text-center"><a href="dubai.html">Group Departures</a></h3>
 							  <p class="text-center sans14">Trip with a group of friends or family</p>
 								<article class="da-slideFromBottom da-animate da-slideTop">
@@ -1076,21 +1076,21 @@ We at Atlas have offers that gets you great value for money. We've always been
 
 
 
-                <div class="span3"><a href="images/news5.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news5.jpg" /></a></div>
+                <div class="span3"><a href="{% static "img/news5.jpg" %} rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news5.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news2.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news2.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news2.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news2.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news1.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news1.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news1.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news1.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news3.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news3.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news3.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news3.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news4.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news4.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news4.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news4.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news6.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news6.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news6.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news6.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news7.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news7.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news7.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news7.jpg" %}" /></a></div>
 
-<div class="span3"><a href="images/news8.jpg" rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="images/news8.jpg" /></a></div>
+<div class="span3"><a href="{% static "img/news8.jpg" %}  rel="prettyPhoto[pp_gal]" title="ATLAS TOURS & TRAVELS at the OTM Mumbai 2014 event."><img src="{% static "img/news8.jpg" %}" /></a></div>
 
 
 
